@@ -1,0 +1,200 @@
+nav {
+    grid-column: 1 / 5;
+    grid-row: 1;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    background-color: #8C0000;
+}
+
+#logo {
+    padding: 0;
+    padding-right: 70px;
+}
+
+#logo:hover {
+    background-color: #8C0000;
+}
+
+nav li {
+    margin: 0;
+    padding: 14px 16px;
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav li:hover {
+    background-color: #f3e5e5;
+}
+
+#search {
+    width: 180px;
+    float: right;
+    margin-right: 3%;
+}
+
+.search input {
+    height: 18px;
+}
+
+#search:hover {
+    background-color: #8C0000;
+}
+
+body {
+    margin: 0;
+    font-family: AppleGothic, sans-serif;
+    display: grid;
+    grid-template-columns: 35vw 65vw;
+    grid-template-rows: 7vw 50vw 1fr;
+}
+
+.left {
+    grid-column: 1;
+    grid-row: 2;
+    background-color: white;
+    border-right: 2px solid #8C0000;
+}
+
+.right {
+    grid-column: 2;
+    grid-row: 2;
+    background-color: white;
+}
+
+.problem-text {
+    width: 90%;
+    height: 90%;
+    margin: 5% auto 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3e5e5;
+    overflow: scroll;
+}
+
+.problem-text p {
+    margin: 0 auto;
+    text-align: left;
+    width: 90%;
+}
+
+.select-div{
+    float: left;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-bottom: 5px;
+}
+
+select{
+    background: white;
+    width: 170px;
+    padding: 2px;
+    font-size:11px;
+    color: black;
+    height: 22px;
+}
+
+.coding-area {
+    width: 90%;
+    height: 65%;
+    margin: auto 0 auto 5%;
+    text-align: left;
+    background-color: #666666;
+}
+
+textarea {
+    padding: 10px;
+    font-size: medium;
+    color: white;
+    overflow: scroll;
+}
+
+.buttons {
+    text-align: center;
+}
+
+#submit {
+    color: green;
+    font-size: 14px;
+}
+
+#reset {
+    color: red;
+    font-size: 14px;
+}
+
+footer {
+    height: 20px;
+    grid-column: 1 / 5;
+    grid-row: 3;
+    text-align: right;
+    color: white;
+    margin-top: 15px;
+    padding-top: .5%;
+    padding-right: 50px;
+    background-color: #8C0000;
+}
+
+@media (max-width: 600px) {
+    body {
+        grid-template-columns: 0 100vw;
+        grid-template-rows: 40vw 100vw 100vw 100vw;
+    }
+
+    nav {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    nav ul {
+        padding: 0;
+    }
+
+    #logo {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+
+    nav li a {
+        font-size: 14px;
+    }
+
+    .search {
+        margin: 0;
+        padding: 0;
+    }
+
+    .left {
+        margin: 0;
+        padding: 0;
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .coding-area {
+        margin: 0 auto;
+        margin-left: 2.5%;
+    }
+
+    .right {
+        grid-column: 2;
+        grid-row: 3;
+    }
+
+    footer {
+        grid-column: 2;
+        grid-row: 4;
+    }
+}
