@@ -160,14 +160,11 @@ footer {
     .left {
         grid-column: 1;
         grid-row: 3;
-        background-color: white;
-        border-right: 2px solid #8C0000;
     }
 
     .right {
         grid-column: 2;
         grid-row: 3;
-        background-color: white;
     }
 
     footer {
