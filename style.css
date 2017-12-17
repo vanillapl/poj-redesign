@@ -58,7 +58,7 @@ nav li:hover {
     background-color: #f3e5e5;
 }
 
-#search {
+.search {
     width: 180px;
     float: left;
     margin-right: 3%;
@@ -68,7 +68,7 @@ nav li:hover {
     height: 18px;
 }
 
-#search:hover {
+.search:hover {
     background-color: #8C0000;
 }
 
