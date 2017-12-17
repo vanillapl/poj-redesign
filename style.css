@@ -59,9 +59,12 @@ nav li:hover {
 }
 
 #search {
-    width: 220px;
     float: left;
     margin-right: 3%;
+}
+
+.search {
+    width: 220px;
 }
 
 .search input {
